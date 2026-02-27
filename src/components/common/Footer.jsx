@@ -1,11 +1,13 @@
 import React from "react";
+
 import {
   Mail,
   Phone,
   MapPin,
   Instagram,
-  Linkedin,
-  Twitter,
+  // Linkedin,
+  Facebook,
+  // Twitter,
   MessageCircle,
 } from "lucide-react";
 
@@ -26,8 +28,39 @@ const Footer = () => {
             painting, electrical, and repair solutions delivered with care.
           </p>
 
+                  {/* Social Icons */}
+        <div className="flex items-center gap-4 mt-4">
+          <a
+            href="https://www.instagram.com/fixify_atyourservice?igsh=NTVpb21ocXpxZXBt"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2 rounded-full bg-slate-100 hover:bg-pink-100 transition"
+          >
+            <Instagram size={20} className="text-slate-600 hover:text-pink-500" />
+          </a>
 
+          <a
+            href="https://www.facebook.com/share/1FnVSgXz7Q/"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2 rounded-full bg-slate-100 hover:bg-blue-100 transition"
+          >
+            <Facebook size={20} className="text-slate-600 hover:text-blue-600" />
+          </a>
+
+          <a
+            href="https://wa.me/919130804848"
+            target="_blank"
+            rel="noreferrer"
+            className="p-2 rounded-full bg-slate-100 hover:bg-green-100 transition"
+          >
+            <MessageCircle size={20} className="text-slate-600 hover:text-green-500" />
+          </a>
+          
         </div>
+        </div>
+
+
 
         {/* Services */}
         <div>
@@ -82,9 +115,9 @@ const Footer = () => {
         </span>
 
         <span>
-          Powered By - 
+          Powered By -
           <a href="https://syntova.in" className="text-blue-600" target="blank">
-          Syntova </a>
+            Syntova </a>
         </span>
       </div>
     </footer>
