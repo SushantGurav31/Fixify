@@ -1,4 +1,3 @@
-import { motion } from 'framer-motion';
 
 // The "Brush Stroke" reveal logic for painting services
 export const BrushReveal = {
